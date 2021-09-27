@@ -1,0 +1,40 @@
+### Get all books
+GET http://localhost:8080/odata/v4/myservice/Books HTTP/1.1
+
+### POST a Book
+POST http://localhost:8080/odata/v4/myservice/Books HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 9,
+    "title": "What ho Jeeves!",
+    "descr": "Book from P G Wodehouse about Bertie Wooster and Jeeves",
+    "author": "P G Wodehouse",
+    "genre": "Humour"
+}
+
+### Get a Book
+GET http://localhost:8080/odata/v4/myservice/Books(id=1) HTTP/1.1
+
+
+### Update a Book
+PUT http://localhost:8080/odata/v4/myservice/Books(id=1) HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Lord of the Rings",
+    "descr": "Fictional story about Hobbits, Orcs, Humans, Elves and Dwarfs",
+    "author": "JRR Tolkein",
+    "genre": "Fiction"
+}
+
+### Update one or more attribute
+PATCH http://localhost:8080/odata/v4/myservice/Books(id=1) HTTP/1.1
+Content-Type: application/json
+
+{
+    "genre": "Adventure, Drama"
+}
+
+### Get all users
+GET http://localhost:8080/odata/v4/myservice/Authors HTTP/1.1
