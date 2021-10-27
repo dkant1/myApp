@@ -1,4 +1,4 @@
-# myApp - CAP Based Application
+# myApp - CAP JAVA Based Application
 
 
 
