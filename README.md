@@ -12,7 +12,25 @@ The app can be pushed to Cloud Foundry.
 
 
 ### To Do
+* Step by Step explaination of app. 
+    Creation of CAP JAVA app
+    Addition of schema.cds(or equivalent) in db folder
+    Addition of a service.cds file in srv folder
+    Addition of POM dependencies to support HANA
+    CDS commands to enable HANA support
+
+    Creation of manifest.yml for pushing app to CF with automatic creation of HANA service instance
+    
 * Simple list UI support in the same app
 * Create Book form to create a new record
 * make it MTA app so that all modules can be pused together to Cloud Foundry
 * Integrate with Message Queuing service on BTP Cloud Foundry
+<<<<<<< HEAD
+=======
+
+
+### Reference
+* https://developers.sap.com/mission.cap-java-app.html
+
+
+>>>>>>> Updated POM

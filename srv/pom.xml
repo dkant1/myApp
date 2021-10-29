@@ -27,10 +27,10 @@
 			<scope>runtime</scope>
 		</dependency>
 
-        <dependency>
+        <!-- <dependency>
             <groupId>com.sap.cds</groupId>
             <artifactId>cds-feature-hana</artifactId>
-        </dependency>
+        </dependency> -->
 
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -48,10 +48,10 @@
 			<artifactId>cds-starter-cloudfoundry</artifactId>
 		</dependency>
 
-        <dependency>
+        <!-- <dependency>
             <groupId>com.sap.cds</groupId>
             <artifactId>cds-feature-cloudfoundry</artifactId>
-        </dependency>
+        </dependency> -->
 	</dependencies>
 
 	<build>
