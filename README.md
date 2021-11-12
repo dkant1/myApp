@@ -25,12 +25,10 @@ The app can be pushed to Cloud Foundry.
 * Create Book form to create a new record
 * make it MTA app so that all modules can be pused together to Cloud Foundry
 * Integrate with Message Queuing service on BTP Cloud Foundry
-<<<<<<< HEAD
-=======
 
 
 ### Reference
 * https://developers.sap.com/mission.cap-java-app.html
 
 
->>>>>>> Updated POM
+
