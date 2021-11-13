@@ -27,15 +27,19 @@ CAP based application with support for SAP HANA database.
 		    } 
         ```
 
-* Add MTA support for the project to facilitate deployment to cloud foundry by using command `cds add mta` -> pre requisite is (`cds add hana`). This command will add `mta.yml` file with `db deployer`, `srv` modules and resources section containing details of HDI container.
+* Add MTA support for the project to facilitate deployment to cloud foundry by using command `cds add mta` pre requisite is (`cds add hana`). This command will add `mta.yml` file with `db deployer`, `srv` modules and resources section containing details of HDI container.
 
 * Build the MTAR file by using command `mbt build` in the root of the project.
 
 * Finally deploy the application to cloud foundry using command `cf deploy <MTAR archive name>`. The deployment process will automatically create the HDI container on cloud foundry if it is not pre existing.
- 
+
 * If you want to enable local testing with remote HANA(on cloud foundry) the use the command `cds deploy to hana : <HDI container name>`. This command will generate a `default-env.json` file containing binding information etc in `VCAP_SERVICES` environment variable. After this use the command `mvn spring-boot:run -Dspring-boot.run.profiles=cloud` to run the application with `cloud` profile, otherwise CAP will use `default` profile and it will instantiate H2 database on local machine.
 
-        
+
+All of the above steps can be performed using VS Code on local computer or using Business Application Studio on BTP.
+If you are using local computer then you will have to prepare the development environment as described here: https://cap.cloud.sap/docs/java/getting-started#local
+
+Once you have prepared your local environment then you can clone this repository and issue `mvn spring-boot:run` command to run the project.
 
 
 
