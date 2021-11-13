@@ -1,7 +1,0 @@
----
-applications:
-- name: myapp
-  path: srv/target/myapp-exec.jar
-  random-route: true
-  services:
-  - myhana

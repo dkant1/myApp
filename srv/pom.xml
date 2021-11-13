@@ -2,15 +2,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>myapp-parent</artifactId>
+		<artifactId>mycapappjava-parent</artifactId>
 		<groupId>com.dk</groupId>
 		<version>${revision}</version>
 	</parent>
 
-	<artifactId>myapp</artifactId>
+	<artifactId>mycapappjava</artifactId>
 	<packaging>jar</packaging>
 
-	<name>myapp</name>
+	<name>mycapappjava</name>
 
 	<!-- ACTUAL DEPENDENCIES -->
 	<dependencies>
@@ -27,11 +27,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-        <!-- <dependency>
-            <groupId>com.sap.cds</groupId>
-            <artifactId>cds-feature-hana</artifactId>
-        </dependency> -->
-
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -47,11 +42,6 @@
 			<groupId>com.sap.cds</groupId>
 			<artifactId>cds-starter-cloudfoundry</artifactId>
 		</dependency>
-
-        <!-- <dependency>
-            <groupId>com.sap.cds</groupId>
-            <artifactId>cds-feature-cloudfoundry</artifactId>
-        </dependency> -->
 	</dependencies>
 
 	<build>
